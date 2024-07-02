@@ -11,10 +11,6 @@ public final class IncompleteCombustion extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        combustionManager.addTagConversion(Tag.PLANKS, Material.DARK_OAK_PLANKS);
-        combustionManager.addTagConversion(Tag.WOODEN_STAIRS, Material.DARK_OAK_STAIRS);
-        combustionManager.addTagConversion(Tag.WOODEN_SLABS, Material.DARK_OAK_SLAB);
-        combustionManager.addTagConversion(Tag.WOODEN_FENCES, Material.DARK_OAK_FENCE);
         
         
         Bukkit.getPluginManager().registerEvents(new BurnListener(this), this);

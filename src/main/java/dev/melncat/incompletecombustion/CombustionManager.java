@@ -1,5 +1,6 @@
 package dev.melncat.incompletecombustion;
 
+import dev.melncat.incompletecombustion.config.CombustionConfig;
 import org.bukkit.Material;
 import org.bukkit.Tag;
 
@@ -22,5 +23,12 @@ public class CombustionManager {
 	
 	public void clearConversions() {
 		conversionMap.clear();
+	}
+	
+	public void applyConfig(CombustionConfig config) {
+		if (config.mode() == CombustionConfig.CombustionMode.PRESET) {
+			config.preset().apply(this);
+		}
+		conversionMap.putAll(config.overrides());
 	}
 }

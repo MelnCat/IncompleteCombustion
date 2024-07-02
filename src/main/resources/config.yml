@@ -1,0 +1,14 @@
+combustion:
+  # Can be either PRESET or MANUAL.
+  mode: PRESET
+
+  # Valid presets:
+  # DARK_OAK: Combusted wood turns into their dark oak equivalents.
+  # NETHER_BRICK: Combusted wood turns into nether brick equivalents.
+  # This option will only be used if mode is set to PRESET
+  preset: DARK_OAK
+
+  # Specify overrides for combustion conversions here. This will be used for both MANUAL and PRESET modes.
+  # If using MANUAL, put all conversions here.
+  overrides:
+    fletching_table: cartography_table

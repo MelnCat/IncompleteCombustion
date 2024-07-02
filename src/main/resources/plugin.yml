@@ -2,3 +2,14 @@ name: IncompleteCombustion
 version: '${version}'
 main: dev.melncat.incompletecombustion.IncompleteCombustion
 api-version: '1.21'
+commands:
+  incompletecombustion:
+    description: The main command for the plugin
+    usage: /<command> [reload]
+permissions:
+  incompletecombustion.command.incompletecombustion:
+    description: Allows using the main command
+    default: op
+  incompletecombustion.command.incompletecombustion.reload:
+    description: Allows reloading the plugin
+    default: op

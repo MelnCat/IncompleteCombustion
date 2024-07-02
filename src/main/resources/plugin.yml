@@ -2,6 +2,7 @@ name: IncompleteCombustion
 version: '${version}'
 main: dev.melncat.incompletecombustion.IncompleteCombustion
 api-version: '1.21'
+author: MelnCat
 commands:
   incompletecombustion:
     description: The main command for the plugin

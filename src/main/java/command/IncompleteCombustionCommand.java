@@ -41,6 +41,7 @@ public class IncompleteCombustionCommand implements CommandExecutor, TabComplete
 				}
 				plugin.loadConfig();
 				sender.sendMessage(Component.text("Plugin configuration was successfully reloaded.", NamedTextColor.GREEN));
+				return true;
 			} else return false;
 		}
 		return false;

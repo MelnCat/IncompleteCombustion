@@ -14,6 +14,7 @@ public enum CombustionPreset {
 		m.addTagConversion(Tag.WOODEN_FENCES, Material.DARK_OAK_FENCE);
 		m.addTagConversion(Tag.WOODEN_PRESSURE_PLATES, Material.DARK_OAK_PRESSURE_PLATE);
 		m.addTagConversion(Tag.WOODEN_BUTTONS, Material.DARK_OAK_BUTTON);
+		m.addTagConversion(Tag.LOGS_THAT_BURN, Material.DARK_OAK_LOG);
 	}),
 	NETHER_BRICK(m -> {
 		m.addTagConversion(Tag.PLANKS, Material.NETHER_BRICKS);
@@ -22,6 +23,11 @@ public enum CombustionPreset {
 		m.addTagConversion(Tag.WOODEN_FENCES, Material.NETHER_BRICK_FENCE);
 		m.addTagConversion(Tag.WOODEN_PRESSURE_PLATES, Material.DARK_OAK_PRESSURE_PLATE);
 		m.addTagConversion(Tag.WOODEN_BUTTONS, Material.DARK_OAK_BUTTON);
+		m.addTagConversion(Tag.LOGS_THAT_BURN, Material.CRIMSON_STEM);
+	}),
+	COAL(m -> {
+		m.addTagConversion(Tag.PLANKS, Material.COAL_BLOCK);
+		m.addTagConversion(Tag.LOGS_THAT_BURN, Material.COAL_BLOCK);
 	});
 	
 	private final Consumer<CombustionManager> callback;

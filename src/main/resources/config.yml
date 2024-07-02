@@ -4,11 +4,12 @@ combustion:
 
   # Valid presets:
   # DARK_OAK: Combusted wood turns into their dark oak equivalents.
-  # NETHER_BRICK: Combusted wood turns into nether brick equivalents.
+  # NETHER_BRICK: Combusted wood turns into nether brick equivalents, and logs turn into crimson stems.
+  # COAL: Combusted wood turn into coal blocks.
   # This option will only be used if mode is set to PRESET
   preset: DARK_OAK
 
   # Specify overrides for combustion conversions here. This will be used for both MANUAL and PRESET modes.
   # If using MANUAL, put all conversions here.
   overrides:
-    fletching_table: cartography_table
+    oak_leaves: dark_oak_leaves

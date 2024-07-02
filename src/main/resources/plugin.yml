@@ -1,0 +1,4 @@
+name: IncompleteCombustion
+version: '${version}'
+main: dev.melncat.incompletecombustion.IncompleteCombustion
+api-version: '1.21'

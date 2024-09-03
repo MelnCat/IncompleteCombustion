@@ -3,6 +3,8 @@
 
 Burning wood will now turn it into dark oak, appearing as if it was burnt! The plugin can also be configured to change burnt blocks into other blocks, such as nether brick, coal blocks, or anything else.
 
+Available at https://www.spigotmc.org/resources/incomplete-combustion.119369/
+
 https://github.com/user-attachments/assets/af7b7bab-3bad-44d9-a84f-9b77b5f0ae8a
 
 # Compilation / How to use
